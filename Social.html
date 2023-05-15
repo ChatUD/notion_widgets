@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      font-size: 2em;
+      color: #7a7a7a
+    }
+
+    .facebook:hover {
+      color: #4267B2;
+    }
+
+    .instagram:hover {
+      color: rgb(241, 102, 217);
+    }
+
+    .tiktok:hover {
+      color: #ff0050;
+    }
+
+    .youtube:hover {
+      color: #FF0000;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start facebook Icon -->
+      <div id="facebook" onclick="navigate(this.id)" class="social">
+        <span class="icon facebook"><i class="fab fa-facebook"></i></span>
+      </div>
+      <!-- End facebook Icon -->
+
+      <!-- Start instagram Icon -->
+      <div id="instagram" onclick="navigate(this.id)" class="social">
+        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
+      </div>
+      <!-- End instagram Icon -->
+
+      <!-- Start tiktok Icon -->
+      <div id="tiktok" onclick="navigate(this.id)" class="social">
+        <span class="icon tiktok"><i class="fab fa-tiktok"></i></span>
+      </div>
+      <!-- End tiktok Icon -->
+
+      <!-- Start youtube Icon -->
+      <div id="youtube" onclick="navigate(this.id)" class="social">
+        <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+      </div>
+      <!-- End youtube Icon -->
+
+
+    </div>
+
+
+    <script>
+      function navigate(id) {
+
+        if (id === "facebook")
+          window.open("https://m.facebook.com/profile.php?id=100090134348315&_rdr", '_parent').focus();
+        }
+        else if (id === "instagram") {
+          window.open("https://www.instagram.com/lightnshadelk/?hl=en", '_parent').focus();
+        }
+        else if (id === "tiktok") {
+          window.open("https://www.tiktok.com/@lightnshade.com", '_parent').focus();
+        }
+        else if (id === "youtube") {
+          window.open("https://www.youtube.com/channel/UCS2WIwNHr8lIPpZKRb291CA", '_parent').focus();
+        }
+      }
+
+    </script>
+
+
+
+  </body>
+
+</html>
